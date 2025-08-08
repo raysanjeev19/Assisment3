@@ -1,15 +1,15 @@
 import React from 'react'
 
-const MatrixTable = ({ matrix, title, subtitle, color }) => {
+const MatrixTable = ({ matrix,  subtitle, color }) => {
   if (!matrix || matrix.length === 0) return null
 
 
   const getDescription = (color) => {
     switch(color) {
       case 'green':
-        return "Addition Pattern: Each cell shows the sum of its row and column indices"
+        return "Addition Pattern"
       case 'red':
-        return "Multiplication Pattern: Each cell shows the product of its row and column indices"
+        return "Multiplication Pattern"
       default:
         return subtitle
     }

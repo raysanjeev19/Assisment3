@@ -30,7 +30,7 @@ body {
   max-width: 1700px;
   width: 100%;
   background: rgba(255, 255, 255, 0.25);
-  border-radius: 32px;
+  /* border-radius: 32px; */
   padding: 48px;
   box-shadow: 
     0 25px 50px -12px rgba(0, 0, 0, 0.25),
@@ -259,8 +259,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   background: #f3f4f6;
   border-radius: 50%;
 }
@@ -467,19 +467,19 @@ h1 {
 
 
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     padding: 24px;
     margin: 10px;
-  }
+  } */
 
   .input-matrices {
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
   }
 
   .plus-sign {
-    transform: rotate(90deg);
-    margin: 16px 0;
+    /* transform: rotate(90deg); */
+    margin: 15px 0;
   }
 
   .matrix-wrapper {
@@ -525,4 +525,42 @@ h1 {
     width: 70px;
     font-size: 1.25rem;
   }
+}
+
+
+
+.footer-section {
+  text-align: center;
+  margin-top: 48px;
+  padding: 24px;
+  
+  /* Transparent Effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px); /* Less blur for a subtle effect */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
+  color: rgba(255, 255, 255, 0.7); /* Lighter text for a soft look */
+  font-weight: 500;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff; /* Pure white on hover for visibility */
+  text-decoration: underline;
 }
