@@ -7,7 +7,7 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Matrix Calculator. All rights reserved.</p>
         <p>
           Made with ❤️ by 
-          <a href="#" target="_blank" rel="noopener noreferrer"> Your Name</a>
+          <a href="#" target="_blank" rel="noopener noreferrer"> Sanjeev</a>
         </p>
       </div>
     </footer>

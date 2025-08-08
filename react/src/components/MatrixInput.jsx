@@ -5,8 +5,8 @@ const MatrixInput = ({ rows, columns, setRows, setColumns, onGenerate }) => {
     <div className="input-section">
       <div className="input-group">
         <div className="input-row">
-          <div className="input-item">
-            <label htmlFor="rows">Row</label>
+          <div className="input-field">
+            <label htmlFor="rows">Rows</label>
             <input
               id="rows"
               type="number"
@@ -14,11 +14,12 @@ const MatrixInput = ({ rows, columns, setRows, setColumns, onGenerate }) => {
               onChange={(e) => setRows(Number(e.target.value))}
               min="1"
               max="10"
+              placeholder="4"
             />
           </div>
           
-          <div className="input-item">
-            <label htmlFor="columns">Column</label>
+          <div className="input-field">
+            <label htmlFor="columns">Columns</label>
             <input
               id="columns"
               type="number"
@@ -26,6 +27,7 @@ const MatrixInput = ({ rows, columns, setRows, setColumns, onGenerate }) => {
               onChange={(e) => setColumns(Number(e.target.value))}
               min="1"
               max="10"
+              placeholder="4"
             />
           </div>
         </div>
