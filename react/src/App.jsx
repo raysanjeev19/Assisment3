@@ -123,7 +123,7 @@ function App() {
                 </div>
               ) : (
                 <>
-                  <div className="equals-sign">=</div>
+                   <div className="plus-sign">=</div>
                   <div className="matrix-wrapper">
                     <MatrixTable 
                       matrix={matrices[2]} 
